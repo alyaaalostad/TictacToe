@@ -1,0 +1,42 @@
+.back-image {
+  background-image: url("https://images.pexels.com/photos/450066/pexels-photo-450066.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500") !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+.box {
+  background: rgb(216, 107, 107);
+  border: 1px solid black;
+  float: left;
+  margin-right: 1px;
+  margin-top: 1px;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  font-size: 50px;
+  line-height: 90px;
+}
+
+.game {
+  position: absolute;
+  top: 46%;
+  left: 46%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: Trattatello, fantasy;
+  margin-left: 35%;
+  margin-top: 5%;
+  font-size: 70px;
+  color: white;
+}
+
+.status {
+  font-family: Bradley Hand, cursive;
+}
