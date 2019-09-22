@@ -50,18 +50,24 @@ class TicTacToe extends Component {
       message = `Winner is ${winner}`;
       this.setState({ result: message });
     } else {
-      message = "Next Player is " + (this.state.x ? "X" : "O");
+      message = "Next Player is " + (this.state.x ? "O" : "X");
+      this.setState({ result: message });
     }
   };
 
   render() {
     return (
-      <div className="game">
-        <div className="board">
-          <Board onClick={i => this.whenClicked(i)} boxes={this.state.boxes} />
+      <>
+        <div className="game">
+          <div className="board">
+            <Board
+              onClick={i => this.whenClicked(i)}
+              boxes={this.state.boxes}
+            />
+            <h2 className="position">{this.state.result}</h2>
+          </div>
         </div>
-        {this.state.result}
-      </div>
+      </>
     );
   }
 }

@@ -31,6 +31,7 @@ class Board extends Component {
           {this.square(6)}
           {this.square(7)}
           {this.square(8)}
+          <br></br>
         </div>
       </div>
     );
