@@ -18,12 +18,16 @@ class App extends Component {
   showPage = () => {
     if (this.state.show)
       return (
-        <div className="back-image">
+        <div>
           <img
             src="http://tictactoepty.com/wp-content/uploads/2018/02/logo-1.png"
             className="image"
             alt=""
           />
+          <p onClick={() => this.trigerPage()} className="restart">
+            Restart!
+          </p>
+
           <TicTacToe />
         </div>
       );

@@ -1,5 +1,5 @@
 body {
-  background-image: url("https://images.pexels.com/photos/1935902/pexels-photo-1935902.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260") !important;
+  background-image: url("https://images.pexels.com/photos/2904142/pexels-photo-2904142.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260") !important;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -9,12 +9,16 @@ body {
   margin-left: 34%;
   width: 23%;
   height: 23%;
+  margin-bottom: 10%;
 }
 .image2 {
-  margin-top: 8%;
+  margin-top: 3%;
   margin-left: 34%;
   width: 23%;
   height: 23%;
+}
+.boarder {
+  border-radius: 4%;
 }
 .box {
   background: rgb(245, 242, 242);
@@ -42,7 +46,7 @@ body {
 .title {
   font-family: Trattatello, fantasy;
   margin-left: 35%;
-  margin-top: 3%;
+  margin-top: 1%;
   font-size: 70px;
   color: black;
 }
@@ -53,7 +57,7 @@ body {
 
 .position {
   font-family: Impact, fantasy;
-  font-size: 30px;
+  font-size: 50px;
   color: purple;
 }
 
@@ -61,4 +65,31 @@ body {
   margin-left: 30%;
   width: 30%;
   height: 30%;
+}
+
+.buttonposition2 {
+  margin-top: 40%;
+  margin-right: 10%;
+  width: 5%;
+  height: 5%;
+}
+
+.restart {
+  font-family: Impact, fantasy;
+  margin-left: 40%;
+  margin-top: 15%;
+  font-size: 50px;
+  color: rgb(59, 50, 116);
+}
+.win {
+  font-family: Impact, fantasy;
+  font-size: 50px;
+  margin-left: 14%;
+  color: rgb(12, 186, 35);
+}
+.tie {
+  font-family: Impact, fantasy;
+  font-size: 50px;
+  margin-left: 21%;
+  color: rgb(128, 0, 23);
 }

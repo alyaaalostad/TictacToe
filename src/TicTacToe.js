@@ -34,13 +34,15 @@ class TicTacToe extends Component {
 
   whenClicked = i => {
     const boxes = this.state.boxes;
-    boxes[i] = this.state.x ? "X" : "O";
-    this.setState({
-      boxes: boxes,
-      x: !this.state.x
-    });
-    if (this.whoWon(this.state.boxes)) {
-      return;
+    if (boxes[i] === "") {
+      boxes[i] = this.state.x ? "X" : "O";
+      this.setState({
+        boxes: boxes,
+        x: !this.state.x
+      });
+      if (this.whoWon(this.state.boxes)) {
+        return;
+      }
     }
   };
   CheckforTie = boxes => {
@@ -64,6 +66,15 @@ class TicTacToe extends Component {
     }
   };
 
+  ResultColor = () => {
+    if (this.state.result.startsWith("Winner")) {
+      return "win";
+    } else if (this.state.result.startsWith("Next")) {
+      return "position";
+    } else {
+      return "tie";
+    }
+  };
   render() {
     return (
       <>
@@ -73,7 +84,7 @@ class TicTacToe extends Component {
               onClick={i => this.whenClicked(i)}
               boxes={this.state.boxes}
             />
-            <h2 className="position">{this.state.result}</h2>
+            <h2 className={this.ResultColor()}>{this.state.result}</h2>
           </div>
         </div>
       </>
