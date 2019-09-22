@@ -22,6 +22,7 @@ class App extends Component {
           <img
             src="http://tictactoepty.com/wp-content/uploads/2018/02/logo-1.png"
             className="image"
+            alt=""
           />
           <TicTacToe />
         </div>
@@ -31,9 +32,15 @@ class App extends Component {
         <div>
           <div>
             <img
+              src="http://tictactoepty.com/wp-content/uploads/2018/02/logo-1.png"
+              className="image2"
+              alt=""
+            />
+            <img
               className="buttonposition"
               src="https://media1.giphy.com/media/QJvwBSGaoc4eI/200.webp?cid=790b76110d4a825292337785400db2c9a582b1375afbd425&rid=200.webp"
               onClick={() => this.trigerPage()}
+              alt=""
             />
           </div>
         </div>

@@ -10,6 +10,12 @@ body {
   width: 23%;
   height: 23%;
 }
+.image2 {
+  margin-top: 8%;
+  margin-left: 34%;
+  width: 23%;
+  height: 23%;
+}
 .box {
   background: rgb(245, 242, 242);
   border: 1px solid black;
@@ -52,8 +58,7 @@ body {
 }
 
 .buttonposition {
-  margin-left: 35%;
-  margin-top: 10%;
+  margin-left: 30%;
   width: 30%;
   height: 30%;
 }

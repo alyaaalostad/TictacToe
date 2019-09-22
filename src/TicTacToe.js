@@ -43,7 +43,12 @@ class TicTacToe extends Component {
       return;
     }
   };
-
+  CheckforTie = boxes => {
+    for (let i = 0; i < this.state.boxes.length; i++) {
+      if (boxes[i] === "") return false;
+    }
+    return true;
+  };
   assignResult = winner => {
     let message;
     if (winner) {
@@ -52,6 +57,10 @@ class TicTacToe extends Component {
     } else {
       message = "Next Player is " + (this.state.x ? "O" : "X");
       this.setState({ result: message });
+      if (this.CheckforTie(this.state.boxes)) {
+        message = "It's a Tie!";
+        this.setState({ result: message });
+      }
     }
   };
 
